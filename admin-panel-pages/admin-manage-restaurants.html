@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./css/admin-manage-restaurants.css" />
+    <script src="./js/admin-manage-restaurants.js" defer></script>
+  </head>
+  <body>
+    <div class="admin-dashboard-container">
+      <nav>
+        <img src="../assets/images/logo.png" class="logo" alt="" />
+        <h1>Admin Panel</h1>
+        <div class="admin-info">
+          <img src="../assets/images/tiger.png" alt="Avatar" />
+          <div>
+            <p>Fahad Naeem</p>
+            <p>Super Admin</p>
+          </div>
+        </div>
+      </nav>
+      <div class="dashboard-body">
+        <aside class="side-menu">
+          <ul class="side-menu-list">
+            <li onclick="location.href = './admin-manage-restaurants.html'">
+              <img src="../assets/images/restaurant-icon.png" />
+              <p>Manage Restaurants </p>
+            </li>
+            <li onclick="location.href = './admin-manage-menu.html'">
+              <img src="../assets/images/Menu-icon.png" />
+              <p> Manage Menu</p>
+            </li>
+            <li onclick="location.href = './admin-manage-user.html'">
+              <img src="../assets/images/user-icon.png" /><p> Manage Users</p>
+            </li>
+          </ul>
+        </aside>
+        <div class="add-restaurant-body">
+          <form
+            autocomplete="off"
+            id="restaurantDataForm"
+            class="restaurant-form"
+          >
+            <input
+              type="text"
+              placeholder="Restaurant Name"
+              id="restaurantInput"
+              class="restaurant-input"
+            />
+            <input
+              type="text"
+              placeholder="city"
+              id="cityInput"
+              class="restaurant-input"
+            />
+            <button type="submit" class="submit" id="submitBtn">Add</button>
+          </form>
+          <div class="restaurant-table">
+            <table id="restaurant-table"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

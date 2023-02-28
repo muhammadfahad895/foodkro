@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="./css/admin-dashboard.css" />
+    <script src="./js/admin-dashboard.js"></script>
+  </head>
+  <body>
+    <div class="admin-dashboard-container">
+      <nav>
+        <img src="../assets/images/logo.png" class="logo" alt="" />
+        <h1>Admin Panel</h1>
+        <div class="admin-info">
+          <img src="../assets/images/tiger.png" alt="Avatar" />
+          <div>
+            <p>Fahad Naeem</p>
+            <p>Super Admin</p>
+          </div>
+        </div>
+      </nav>
+      <div class="dashboard-body">
+        <aside class="side-menu">
+          <ul class="side-menu-list">
+            <li onclick="location.href = './admin-manage-restaurants.html'">
+              <img src="../assets/images/restaurant-icon.png" />
+              <p>Manage Restaurants </p>
+            </li>
+
+            <li onclick="location.href = './admin-manage-menu.html'">
+              <img src="../assets/images/Menu-icon.png" />
+              <p>Manage Menu </p>
+            </li>
+
+            <li onclick="location.href = './admin-manage-user.html'">
+              <img src="../assets/images/user-icon.png" />
+              <p>Manage Users</p>
+            </li>
+          </ul>
+        </aside>
+        <div class="dashboard-maincontent">
+          <div class="card">
+            <img src="../assets/images/totalRe.png" alt="" />
+            <div class="card-content">
+              <h1 class="card-total">3</h1>
+              <h2 class="card-heading">Totals Restaurants</h2>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../assets/images/menulist.png" alt="" />
+            <div class="card-content">
+              <h1 class="card-total">3</h1>
+              <h2 class="card-heading">Totals Menu Items</h2>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../assets/images/user.png" alt="" />
+            <div class="card-content">
+              <h1 class="card-total">3</h1>
+              <h2 class="card-heading">Totals Active Users</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

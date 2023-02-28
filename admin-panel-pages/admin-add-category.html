@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Category</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./admin-add-category.css" />
+    <script src="./admin-add-category.js" defer></script>
+  </head>
+  <body>
+    <div class="admin-add-category-container">
+      <nav>
+        <h1>Add Category</h1>
+        <div class="admin-info">
+          <img src="../assets/images/tiger.png" alt="Avatar" />
+          <div>
+            <p>Fahad Naeem</p>
+            <p>Super Admin</p>
+          </div>
+        </div>
+      </nav>
+      <div class="add-category-body">
+        <!-- <div class="dashboard-body-actions">
+          <button>Add Restuarant</button>
+          <button>Add Categories</button>
+        </div> -->
+        <form autocomplete="off" id="category-form">
+          <input type="text" placeholder="Category Name" id="category-input" />
+          <input
+            type="text"
+            placeholder="Restaurant Name"
+            id="restaurant-input"
+          />
+          <button type="submit">Add</button>
+        </form>
+        <div class="category-table">
+          <table id="category-table"></table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

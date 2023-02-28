@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./css/admin-manage-menu.css" />
+    <script src="./js/admin-manage-menuedit.js" defer></script>
+  </head>
+  <body>
+    <div class="admin-dashboard-container">
+      <nav>
+        <img src="../assets/images/logo.png" class="logo" alt="" />
+        <h1>Admin Panel</h1>
+        <div class="admin-info">
+          <img src="../assets/images/tiger.png" alt="Avatar" />
+          <div>
+            <p>Fahad Naeem</p>
+            <p>Super Admin</p>
+          </div>
+        </div>
+      </nav>
+      <div class="dashboard-body">
+        <aside class="side-menu">
+          <ul class="side-menu-list">
+            <li onclick="location.href = './admin-manage-restaurants.html'">
+              <img src="../assets/images/restaurant-icon.png" />
+              <p
+                ><a href="./admin-manage-restaurants.html"
+                  >Manage Restaurants</a
+                >
+              </p>
+            </li>
+            <li onclick="location.href = './admin-manage-menu.html'">
+              <img src="../assets/images/Menu-icon.png" />
+              Manage Restaurants
+
+              <p> Manage Menu</p>
+              <ul>
+                <li style="margin-bottom: 1rem"> Add menu</li>
+                <li>menu list</li>
+              </ul>
+            </li>
+            <li onclick="location.href = './admin-manage-users.html'">
+              <img src="../assets/images/user-icon.png" /><p> Manage Users</p>
+            </li>
+          </ul>
+        </aside>
+        <div class="add-menu-body">
+          <div class="form-body">
+            <form action="" style="color: white">
+              <div class="menu-input">
+                <label>Menu Name</label>
+                <input
+                  type="text"
+                  placeholder="Product Name"
+                  id="productName"
+                />
+              </div>
+              <div class="menu-input">
+                <label>Restaurants</label>
+                <select
+                  class="form-control"
+                  data-placeholder="Choose a Category"
+                  tabindex="1"
+                  id="selectRes"
+                >
+                </select>
+              </div>
+              <div class="menu-input">
+                <label>Price</label>
+                <input type="number" placeholder="Price" id="productPrice" />
+              </div>
+              <div class="menu-input">
+                <label>Description</label>
+                <textarea
+                  rows="4"
+                  data-placeholder="Description"
+                  id="productDescription"
+                >
+                </textarea>
+              </div>
+              <div class="menu-input">
+                <h2>Uploaded Image</h2>
+                <img id="imagePreview" width="300px" />
+                <input type="file" id="fileInput" />
+              </div>
+              <button class="save-btn" id="saveBtn">Edit </button>
+            </form>
+          </div>
+          <!-- <div class="restaurant-table">
+            <table id="restaurant-table"></table>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

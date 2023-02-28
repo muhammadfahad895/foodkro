@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+
+.admin-dashboard-container {
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+}
+
+.admin-dashboard-container nav {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.admin-dashboard-container nav h1 {
+  color: #fff;
+}
+
+.admin-dashboard-container nav .logo {
+  width: 100px;
+}
+
+.admin-dashboard-container nav .admin-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.admin-dashboard-container nav .admin-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.admin-dashboard-container nav .admin-info div {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.admin-dashboard-container nav .admin-info div p:nth-child(1) {
+  font-weight: bold;
+}
+
+.admin-dashboard-container nav .admin-info div p:nth-child(2) {
+  font-size: 13px;
+}
+
+.dashboard-body {
+  display: flex;
+  height: 88.3vh;
+}
+
+.dashboard-body-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard-body-actions button {
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.dashboard-body .side-menu {
+  color: white;
+  padding-block: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.dashboard-body .side-menu .side-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #17171c;
+  padding-inline: 0.8rem;
+}
+
+.side-menu .side-menu-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border-radius: 33px;
+  background-color: #fff;
+  color: rgb(2, 2, 2);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.side-menu .side-menu-list li:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  cursor: pointer;
+}
+.side-menu .side-menu-list li:active {
+  transform: scale(0.9);
+}
+
+.side-menu-list li img {
+  padding-right: 0.5rem;
+  width: 44px;
+}
+
+.dashboard-maincontent {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-block: 4rem;
+  padding-inline: 1rem;
+}
+.dashboard-maincontent .card {
+  display: flex;
+  text-align: center;
+  border: 2px solid #373738;
+  box-shadow: rgba(187, 185, 185, 0.25) 0px 0.0625em 0.0625em,
+    rgba(228, 225, 225, 0.11) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.dashboard-maincontent .card .card-content {
+  color: rgb(255, 252, 252);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dashboard-maincontent .card img {
+  width: 100px;
+}
+
+.card .card-content .card-total {
+  font-size: 2rem;
+}
+
+.card .card-content .card-heading {
+  color: rgba(255, 253, 253, 0.822);
+}

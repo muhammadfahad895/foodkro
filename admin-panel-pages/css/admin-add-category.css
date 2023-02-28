@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.admin-add-category-container {
+  width: 100%;
+}
+
+.admin-add-category-container nav {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.admin-add-category-container nav h1 {
+  color: #fff;
+}
+
+.admin-add-category-container nav .admin-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.admin-add-category-container nav .admin-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.admin-add-category-container nav .admin-info div {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.admin-add-category-container nav .admin-info div p:nth-child(1) {
+  font-weight: bold;
+}
+
+.admin-add-category-container nav .admin-info div p:nth-child(2) {
+  font-size: 13px;
+}
+
+.add-category-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.add-category-body-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-category-actions button {
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 20px;
+}
+
+.add-category-body form {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid black;
+}
+
+.add-category-body form input {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0px 20px;
+}
+
+.add-category-body form button {
+  height: 40px;
+  border-radius: 5px;
+  padding: 0px 40px;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
+
+.category-table {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-table table {
+  border-collapse: collapse;
+}
+
+.category-table table,
+td,
+th {
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+
+.category-table table th {
+  background-color: black;
+  color: #fff;
+}
